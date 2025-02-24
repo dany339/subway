@@ -1,222 +1,197 @@
 @charset 'utf-8';
 
-.vision {
-  box-shadow: 0px 0px 30px var(--main-color20);
-  padding: 5.8rem 0 14.2rem 0;
+.tip {
+  margin: 12rem 0;
 }
 
-.vison-title {
-  margin-top: 9rem;
-  text-align: center;
-  position: relative;
+.tip-list {
+  margin-top: 3.125vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.vison-title::before,
-.vison-title::after {
-  content: "";
-  width: 24.6rem;
-  height: 15rem;
-  position: absolute;
-  background: url(../img/decoration-pic1.svg) no-repeat;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.vison-title::before {
-  left: 0;
-}
-
-.vison-title::after {
-  right: 0;
-  transform: translateY(-50%) scaleX(-1);
-}
-
-.vison-title p:nth-child(1) {
-  color: var(--main-color);
-}
-
-.vison-title h4 {
-  font: 8.2rem/1.1 "Poppins", sans-serif;
-  font-size: clamp(4.5rem, 6vw, 8.2rem);
-  font-weight: 600;
-  color: var(--main-color);
-}
-
-.vison-title p {
-  margin: 3rem auto 0 auto;
-  width: 50%;
-  word-break: keep-all;
-}
-
-.vip .sec-title {
-  margin-top: 12rem;
-}
-
-.vip-service {
-  margin: 6rem 0 12rem 0;
+.tip-list li {
+  /* border: 1px solid #000; */
+  width: 53.3rem;
+  aspect-ratio: 1/0.9944;
+  flex: 1 0 18%;
   padding: 3rem;
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  overflow-x: auto;
-}
-
-.vip-service li {
-  width: 36.9rem;
-  min-width: 33.5rem;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  padding: 0 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  word-break: keep-all;
+  border-radius: 10px;
   overflow: hidden;
   background: no-repeat 50% / cover;
   position: relative;
-  cursor: pointer;
-  word-break: keep-all;
-  box-shadow: 0px 0px 30px rgba(200, 0, 47, 0.25);
+  text-align: center;
 }
 
-.vip-service li:nth-child(1) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_s1.png);
+.tip-list li:nth-child(1) {
+  background-image: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/brand_slide01-2.png);
 }
-.vip-service li:nth-child(2) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_s2.png);
+.tip-list li:nth-child(2) {
+  background-image: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/brand_slide02-1.png);
 }
-.vip-service li:nth-child(3) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_s3.png);
-}
-.vip-service li:nth-child(4) {
-  background-image: url(https://themedicube.co.kr/web/upload/event/ebottle_img_21.png);
+.tip-list li:nth-child(3) {
+  background-image: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/brand_slide02-2.png);
 }
 
-.vip-service li::after {
+.tip-list li:hover {
+  justify-content: center;
+}
+
+.tip-list li::after {
+  content: "";
+  transition: 0.7s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(120, 101, 80, 0),
+    rgba(120, 101, 80, 0),
+    rgba(120, 101, 80, 0.7)
+  );
+}
+
+.tip-list li:hover::after {
+  content: "";
+  height: 100%;
+  background: var(--main-color);
+}
+
+.tip-list li strong {
+  /* font-size: 2.8rem; */
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  font-weight: 700;
+  color: var(--white100);
+  position: relative;
+  z-index: 1;
+  top: 80%;
+  transition: 0.4s;
+}
+
+.tip-list li p {
+  margin-top: 2rem;
+  color: var(--white70);
+  position: relative;
+  z-index: 1;
+  top: 120%;
+}
+
+.tip-list li:hover strong {
+  /* font-size: 3rem; */
+  font-size: clamp(2.2rem, 2vw, 2.8rem);
+  top: 35%;
+}
+
+.tip-list li:hover p {
+  top: 35%;
+  transition: 0.6s;
+}
+
+.story .inner {
+  overflow: hidden;
+}
+
+.story {
+  background: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/main_bnr1.jpg)
+    no-repeat 50% / cover;
+  padding: 21.2rem 0 20rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.story::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.4s;
-  background: var(--black10);
+  background: linear-gradient(
+    to right,
+    rgba(39, 110, 241, 0.7),
+    rgba(0, 0, 0, 0)
+  );
 }
 
-.vip-service li:hover::after {
-  content: "";
-  background: var(--main-color);
-}
-
-.vip-service dl {
+.story .sec-title {
+  color: var(--white100);
   position: relative;
   z-index: 1;
 }
 
-.vip-service dt {
-  font-size: 3rem;
-  font-weight: 700;
+.story .sec-title strong {
   color: var(--white100);
-  transform: translateY(110%);
-  transition: 0.5s;
 }
 
-.vip-service li:hover dt {
-  color: var(--white100);
-  transform: translateY(0);
+.story .sec-title h3 {
+  width: 50%;
+  word-break: keep-all;
 }
 
-.vip-service dd {
-  margin-top: 2.3rem;
-  transform: translateY(350%);
+.story p {
+  width: 40%;
+  font-size: clamp(1.8rem, 2vw, 2rem);
   color: var(--white70);
-  transition: 0.5s;
-}
-
-.vip-service li:hover dd {
-  transform: translateY(0);
-}
-
-.reward-item {
-  flex-direction: column;
-}
-
-.app-download {
-  margin-top: 15rem;
+  word-break: keep-all;
+  margin-top: 2.8rem;
   position: relative;
-  /* background: #ff5; */
-  /* padding: 26rem 0 38rem 0; */
+  z-index: 1;
 }
 
-.app-download-con {
-  display: flex;
-  justify-content: space-between;
-  gap: 4rem;
-}
-
-.app-pic {
-  width: 30.2083vw;
-  min-width: 34.5rem;
-  aspect-ratio: 1/0.931;
-  overflow: hidden;
-}
-
-.app-store {
-  display: flex;
-  margin-top: 6rem;
-  gap: 2rem;
-}
-
-.app-store .btn-more-item {
-  background: var(--white100);
-}
-
-.app-store a {
-  background: var(--main-color);
+.story p b {
+  font-weight: 600;
   color: var(--white100);
 }
 
-.app-store a:hover {
-  color: var(--main-color);
-}
+@media (max-width: 1440px) {
+  .tip-list li:hover strong {
+    top: 15%;
+  }
 
-.app-store a::after {
-  background-image: url(../img/store-ico1.png);
-}
-
-.app-store a:hover::after {
-  background-image: url(../img/store-ico1-m.png);
-}
-
-@media (max-width: 1200px) {
-  .vip-service {
-    gap: 5rem;
+  .tip-list li:hover p {
+    top: 15%;
   }
 }
 
-@media (max-width: 880px) {
-  .app-download {
-    margin: 12rem 0;
+@media (max-width: 1024px) {
+  .tip-list {
+    flex-direction: column;
   }
 
-  .app-pic {
-    display: none;
+  .tip-list li {
+    width: 100%;
+    aspect-ratio: 1/0.3;
+  }
+
+  .tip-list li:hover strong {
+    top: 20%;
+  }
+
+  .tip-list li:hover p {
+    top: 20%;
   }
 }
 
 @media (max-width: 768px) {
-  .vison-title::before,
-  .vison-title::after {
-    display: none;
+  .tip-list li {
+    aspect-ratio: 1/0.45;
   }
 
-  .vison-title p {
-    width: 80%;
+  .story p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tip-list li {
+    aspect-ratio: 1/0.8;
   }
 
-  .reward-txt br {
-    display: none;
+  .story .sec-title h3 {
+    font-size: 2.7rem;
   }
 }

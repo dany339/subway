@@ -182,31 +182,6 @@ $menuItem.on("click", function () {
   $(menuList).find($menuItem).stop().slideToggle(duration);
 });
 
-const $faqTabMenu = $(".faq-tab > li");
-const $faqTabCon = $(".info-wrap > ul");
-
-faqTabAction(0);
-
-$faqTabMenu.on("click", function (e) {
-  e.preventDefault();
-
-  const faqTabIdx = $(this).index();
-  console.log(faqTabIdx);
-
-  faqTabAction(faqTabIdx);
-});
-
-// 공통의 동작을 함수로 정의
-function faqTabAction(index) {
-  // 탭메뉴 활성화
-  $faqTabMenu.removeClass("on");
-  $faqTabMenu.eq(index).addClass("on");
-
-  // 인덱스에 해당하는 $tabCon 보이기
-  $faqTabCon.hide();
-  $faqTabCon.eq(index).show();
-}
-
 const $question = $(".info-wrap > ul > li");
 const $answer = $(".answer-wrap");
 

@@ -119,37 +119,6 @@
   gap: 2rem;
 }
 
-.faq-tab {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: clamp(2.4rem, 3vw, 3rem);
-  font-weight: 700;
-  gap: 2rem;
-  margin-top: 3.125vw;
-  flex-shrink: 0;
-  overflow-x: auto;
-}
-
-.faq-tab li {
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.faq-tab li:hover {
-  color: var(--main-color);
-  transition: 0.3s;
-}
-
-.faq-tab li.on {
-  color: var(--main-color);
-  transition: 0.3s;
-}
-
-.faq-tab.on {
-  color: var(--main-color);
-}
-
 .info-wrap li {
   border-top: 2px solid var(--black20);
   padding: 3rem 3.5rem;
@@ -234,10 +203,6 @@
 }
 
 @media (max-width: 1440px) {
-  .reward-item {
-    flex-direction: column;
-  }
-
   .menu-list {
     padding: 0;
   }
