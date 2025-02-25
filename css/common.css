@@ -4,13 +4,13 @@
 
 :root {
   font-size: 62.5%;
-  --main-color: #c8002f;
-  --main-color80: rgba(200, 0, 47, 0.8);
-  --main-color70: rgba(200, 0, 47, 0.7);
-  --main-color60: rgba(200, 0, 47, 0.6);
-  --main-color30: rgba(200, 0, 47, 0.3);
-  --main-color20: rgba(200, 0, 47, 0.2);
-  --main-color10: rgba(200, 0, 47, 0.1);
+  --main-color: #b5936f;
+  --main-color80: rgba(181, 147, 111, 0.8);
+  --main-color70: rgba(181, 147, 111, 0.7);
+  --main-color60: rgba(181, 147, 111, 0.6);
+  --main-color30: rgba(181, 147, 111, 0.3);
+  --main-color20: rgba(181, 147, 111, 0.2);
+  --main-color10: rgba(181, 147, 111, 0.1);
   --title-color: #272727;
   --text-color: #666666;
   --white100: rgba(255, 255, 255, 1);
@@ -76,8 +76,6 @@ body {
 }
 
 .menu-con-slider,
-.event-list,
-.event-swiper figure:hover,
 .news-list,
 .news-swiper figure:hover {
   cursor: url("../img/cursor.svg") 2 2, auto;
@@ -309,8 +307,8 @@ nav::before {
 
 .logo a {
   display: block;
-  width: 15rem;
-  height: 3.2rem;
+  width: 20rem;
+  height: 1.5rem;
   background: url(../img/logo.svg) no-repeat 0 0 / contain;
 }
 
@@ -443,27 +441,10 @@ nav::before {
   transform: rotate(0);
 }
 
-.sns-ico-list {
-  display: flex;
-  gap: 1.2rem;
-}
-
 .btn-instagram {
   width: 3rem;
   height: 3rem;
   background: url(../img/sns-ico-instargram.svg) no-repeat 50% / contain;
-}
-
-.btn-facebook {
-  width: 3rem;
-  height: 3rem;
-  background: url(../img/sns-ico-facebook.svg) no-repeat 50% / contain;
-}
-
-.btn-youtube {
-  width: 3rem;
-  height: 3rem;
-  background: url(../img/sns-ico-youtube.svg) no-repeat 50% / contain;
 }
 
 /* 모바일 메뉴~!!!! */
@@ -589,8 +570,8 @@ nav::before {
 }
 
 .accredit figure {
-  width: 15rem;
-  height: 3.2rem;
+  width: 20rem;
+  height: 1.5rem;
 }
 
 .accredit figure img {
@@ -746,12 +727,9 @@ nav::before {
     border-bottom: 1px solid var(--black20);
   }
 
-  .foot-list::before {
-    width: 122vw;
-  }
-
+  .foot-list::before,
   .foot-list::after {
-    display: none;
+    width: 122vw;
   }
 
   .accredit {
@@ -768,7 +746,7 @@ nav::before {
     flex-direction: row;
     width: 100vw;
     height: 10rem;
-    padding: 0 3rem;
+    padding: 0 2rem;
     background: transparent;
   }
 
@@ -818,12 +796,9 @@ nav::before {
     border-bottom: 1px solid var(--black20);
   }
 
-  .foot-list::before {
-    width: 122vw;
-  }
-
+  .foot-list::before,
   .foot-list::after {
-    display: none;
+    width: 122vw;
   }
 
   .foot-con {

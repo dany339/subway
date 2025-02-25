@@ -58,7 +58,7 @@
 .tip-list li:hover::after {
   content: "";
   height: 100%;
-  background: var(--main-color);
+  background: var(--main-color70);
 }
 
 .tip-list li strong {
@@ -112,7 +112,7 @@
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(39, 110, 241, 0.7),
+    rgba(120, 101, 80, 0.7),
     rgba(0, 0, 0, 0)
   );
 }
