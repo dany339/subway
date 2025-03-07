@@ -4,6 +4,52 @@
   margin: 12rem 0;
 }
 
+.sns-tab {
+  display: flex;
+  gap: 1.8939%;
+  justify-content: center;
+  /* margin-top: 11rem; */
+  margin-top: 5.7292vw;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.sns-tab li {
+  display: block;
+  width: 12rem;
+  min-width: 9.6rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+}
+
+.sns-tab a {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.sns-tab li.on {
+  background: var(--main-color);
+}
+
+.sns-tab li.on a {
+  color: var(--white100);
+}
+
+.sns-tab li:hover {
+  background: #e9cdcd;
+  transition: 0.3s;
+}
+
+.sns-tab li:hover a {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
 .sns .sns-list {
   margin-top: 2rem;
   display: flex;
@@ -15,13 +61,13 @@
 }
 
 .sns-item {
-  width: 41rem;
+  width: 47.5rem;
   margin-top: 3.125vw;
 }
 
 .sns-item figure {
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/0.5537;
   /* height: 30.7rem; */
   border-radius: 10px;
   overflow: hidden;
@@ -40,6 +86,6 @@
 .sns-txt p + p {
   font-weight: 400;
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: var(--main-color);
   margin-top: 0.5rem;
 }

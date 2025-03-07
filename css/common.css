@@ -4,13 +4,12 @@
 
 :root {
   font-size: 62.5%;
-  --main-color: #b5936f;
-  --main-color80: rgba(181, 147, 111, 0.8);
-  --main-color70: rgba(181, 147, 111, 0.7);
-  --main-color60: rgba(181, 147, 111, 0.6);
-  --main-color30: rgba(181, 147, 111, 0.3);
-  --main-color20: rgba(181, 147, 111, 0.2);
-  --main-color10: rgba(181, 147, 111, 0.1);
+  --main-color: #009223;
+  --sub-color: #ffce32;
+  --main-color70: rgba(255, 206, 50, 0.7);
+  --main-color60: rgba(0, 146, 35, 0.6);
+  --main-color20: rgba(255, 206, 50, 0.2);
+  --main-color10: rgba(0, 146, 35, 0.1);
   --title-color: #272727;
   --text-color: #666666;
   --white100: rgba(255, 255, 255, 1);
@@ -441,10 +440,21 @@ nav::before {
   transform: rotate(0);
 }
 
+.sns-ico-list {
+  display: flex;
+  gap: 1.2rem;
+}
+
 .btn-instagram {
   width: 3rem;
   height: 3rem;
   background: url(../img/sns-ico-instargram.svg) no-repeat 50% / contain;
+}
+
+.btn-facebook {
+  width: 3rem;
+  height: 3rem;
+  background: url(../img/sns-ico-facebook.svg) no-repeat 50% / contain;
 }
 
 /* 모바일 메뉴~!!!! */

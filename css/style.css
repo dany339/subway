@@ -4,12 +4,6 @@
   display: none;
 }
 
-.visual-title h2 {
-  font: 9.6rem/1 "Poppins", sans-serif;
-  font-size: clamp(5.5rem, 11.1146vw, 17.5rem);
-  font-weight: 700;
-}
-
 .slider-menu-wrap {
   padding-top: 12rem;
   display: flex;
@@ -19,9 +13,9 @@
 
 .menu-card {
   position: relative;
-  width: 42.7rem;
+  width: 80.5rem;
   /* width: 22.2396vw; */
-  aspect-ratio: 1/1.2272;
+  aspect-ratio: 1/0.579;
   border-radius: 10px;
   overflow: hidden;
   /* margin: 0 1rem; */
@@ -85,6 +79,11 @@
 .menu-card figure {
   width: 100%;
   height: 100%;
+  background-color: rgba(255, 206, 50, 0.2);
+}
+
+.menu-card figure img {
+  scale: 0.8;
 }
 
 .menu-card .menu-name {
@@ -111,43 +110,62 @@
   opacity: 0;
 }
 
-.news {
-  /* margin-top: 8.0208vw; */
-  margin: 15.4rem 0 6.25vw 0;
+.reward {
+  margin: 6.25vw 0;
 }
 
-.news-list {
-  margin-top: 2.0833vw;
-  padding: 0 2rem;
+.reward-item {
+  /* margin-top: 3rem; */
+  margin-top: 1.5625vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.news-swiper figure {
-  margin-top: 2.6rem;
+.reward-item li {
   width: 100%;
-  aspect-ratio: 1/1.09259;
+  gap: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--main-color10);
   border-radius: 10px;
+  padding: 3.4rem 3rem;
+  word-break: keep-all;
+}
+
+.reward-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reward-item li strong {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.reward-txt p {
+  font-size: 1.8rem;
+}
+
+.reward-item figure {
+  max-width: 9.3rem;
+  min-width: 9.3rem;
+  width: 9.3rem;
+  aspect-ratio: 1/1;
+  background: var(--white100);
+  border-radius: 50%;
   overflow: hidden;
-  position: relative;
-  box-shadow: 5px 6px 11px rgba(0, 0, 0, 0.25);
-}
-
-.news-swiper figure::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--main-color70);
-  transition: 0.4s;
-  opacity: 0;
-}
-
-.news-swiper figure:hover::after {
-  opacity: 1;
+  border: 2px solid var(--sub-color);
 }
 
 @media (max-width: 1024px) {
+  .main-title {
+    width: 50vw;
+    min-width: 35rem;
+  }
+
   .slider-menu-wrap {
     flex-wrap: wrap;
   }
@@ -179,5 +197,15 @@
 
   .menu-con-slider {
     width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .reward-item li {
+    flex-direction: column;
+  }
+
+  .reward-txt {
+    text-align: center;
   }
 }

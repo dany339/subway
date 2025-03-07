@@ -13,8 +13,8 @@
 
 .tip-list li {
   /* border: 1px solid #000; */
-  width: 53.3rem;
-  aspect-ratio: 1/0.9944;
+  width: 40.7rem;
+  aspect-ratio: 1/1.3022;
   flex: 1 0 18%;
   padding: 3rem;
   word-break: keep-all;
@@ -26,13 +26,16 @@
 }
 
 .tip-list li:nth-child(1) {
-  background-image: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/brand_slide01-2.png);
+  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp01.jpg);
 }
 .tip-list li:nth-child(2) {
-  background-image: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/brand_slide02-1.png);
+  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp02.jpg);
 }
 .tip-list li:nth-child(3) {
-  background-image: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/brand_slide02-2.png);
+  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp03.jpg);
+}
+.tip-list li:nth-child(4) {
+  background-image: url(https://www.subway.co.kr/images/franchise/img_barnd_comp04.jpg);
 }
 
 .tip-list li:hover {
@@ -91,60 +94,171 @@
   transition: 0.6s;
 }
 
-.story .inner {
+.vip .sec-title {
+  margin-top: 6.25vw;
+}
+
+.vip-service {
+  margin: 6rem 0 12rem 0;
+  padding: 3rem 12.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.vip-service li {
+  width: 36.9rem;
+  min-width: 22.5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--main-color70);
+  border: 2px solid var(--main-color);
+  box-shadow: 0px 0px 30px rgba(0, 146, 35, 0.25);
+  padding: 0 5.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   overflow: hidden;
-}
-
-.story {
-  background: url(https://ecimg.cafe24img.com/pg299b34409484036/baekih1001/web/upload/kment/images/main_bnr1.jpg)
-    no-repeat 50% / cover;
-  padding: 21.2rem 0 20rem 0;
   position: relative;
-  z-index: 1;
+  cursor: pointer;
+  word-break: keep-all;
+  transition: 0.3s;
 }
 
-.story::after {
+.vip-service li:hover {
+  background: var(--main-color);
+}
+
+.vip-service dl {
+  position: relative;
+}
+
+.vip-service dt {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+  transform: translateY(50%);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dt {
+  color: var(--white100);
+  transform: translateY(0);
+}
+
+.vip-service dd {
+  margin-top: 0.3rem;
+  transform: translateY(400%);
+  color: var(--white70);
+  transition: 0.5s;
+}
+
+.vip-service li:hover dd {
+  transform: translateY(0);
+}
+
+.faq {
+  margin: 12rem 0 6.25vw 0;
+}
+
+.faq-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.125vw;
+}
+
+.info-wrap li {
+  border-top: 2px solid var(--black20);
+  padding: 3rem 3.5rem;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.info-wrap li:first-child {
+  border-top: 4px solid var(--main-color);
+}
+
+.info-wrap li:last-child {
+  border-bottom: 2px solid var(--black20);
+}
+
+.info-wrap li.on {
+  background: var(--main-color10);
+}
+
+.info-wrap li::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(120, 101, 80, 0.7),
-    rgba(0, 0, 0, 0)
-  );
+  top: 3rem;
+  right: 3%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background: url(../img/arrow-m-bottom.png) no-repeat 50%;
+  transition: 0.4s;
 }
 
-.story .sec-title {
+.info-wrap li.on::after {
+  rotate: -180deg;
+}
+
+.faq-title {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.faq-title i,
+.answer-con i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2.6rem;
+  font-weight: 700;
   color: var(--white100);
-  position: relative;
-  z-index: 1;
+  background: var(--main-color);
 }
 
-.story .sec-title strong {
-  color: var(--white100);
+.answer-con i {
+  background: var(--sub-color);
 }
 
-.story .sec-title h3 {
-  width: 50%;
+.faq-txt {
+  width: 80%;
+}
+
+.faq-txt h4 {
+  font-size: clamp(2.2rem, 2vw, 3rem);
+  font-weight: 700;
+  color: var(--title-color);
   word-break: keep-all;
 }
 
-.story p {
-  width: 40%;
-  font-size: clamp(1.8rem, 2vw, 2rem);
-  color: var(--white70);
+.answer-wrap {
+  margin-top: 4rem;
+  display: none;
+  font-size: 1.8rem;
   word-break: keep-all;
-  margin-top: 2.8rem;
-  position: relative;
-  z-index: 1;
 }
 
-.story p b {
-  font-weight: 600;
-  color: var(--white100);
+.answer-con {
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 1800px) {
+  .vip-service {
+    justify-content: flex-start;
+    padding: 3rem 0;
+  }
 }
 
 @media (max-width: 1440px) {
