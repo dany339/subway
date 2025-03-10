@@ -117,3 +117,9 @@
     padding: 0;
   }
 }
+
+@media (max-width: 677px) {
+  .menu-tab {
+    justify-content: flex-start;
+  }
+}

@@ -104,36 +104,6 @@ if ($(".menu-con-slider").length) {
   });
 }
 
-if ($(".news-swiper").length) {
-  const $eventSwiper = new Swiper(".news-swiper", {
-    loop: true,
-    slidesPerView: "1",
-    spaceBetween: 20,
-    autoplay: {
-      delay: 1000,
-    },
-
-    breakpoints: {
-      1300: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-      800: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-      600: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      375: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-    },
-  });
-}
-
 /* MENU!!!---------------------------------------------- */
 
 // menu-tab(MENU)
@@ -169,19 +139,6 @@ if ($(".menu-list li")) {
   });
 }
 
-const $menuItem = $(".menu-list li");
-const $menuList = $(".menu-list");
-
-$menuItem.on("click", function () {
-  $(menuList).toggleClass("on");
-
-  $(menuList).siblings().find($menuItem).stop().slideUp(duration);
-
-  // $(this).find($answer).slideDown(duration);
-  // 선택한 놈의 자손중 답변을 찾아서 슬라이드 토글
-  $(menuList).find($menuItem).stop().slideToggle(duration);
-});
-
 const $question = $(".info-wrap > ul > li");
 const $answer = $(".answer-wrap");
 
@@ -203,90 +160,6 @@ $question.on("click", function () {
   // 선택한 놈의 자손중 답변을 찾아서 슬라이드 토글
   $(this).find($answer).stop().slideToggle(duration);
 });
-
-/* REWARDS!!!---------------------------------------------- */
-
-// event swiper(MAIN)
-const $eventTabMenu = $(".event-tab > li");
-const $eventTabCon = $(".event-list");
-
-$eventTabCon.hide();
-$eventTabCon.eq(0).show();
-$eventTabMenu.eq(0).find("a").addClass("on");
-
-$eventTabMenu.on("click", function (e) {
-  e.preventDefault();
-
-  const eventTabIdx = $(this).index();
-
-  $eventTabMenu.find("a").removeClass("on");
-  $(this).find("a").addClass("on");
-
-  $eventTabCon.hide();
-  $eventTabCon.eq(eventTabIdx).show();
-
-  if (eventTabIdx === 0 && window.eventSwiper) {
-    window.eventSwiper.update();
-  }
-});
-
-if ($(".event-swiper").length) {
-  const $eventSwiper = new Swiper(".event-swiper", {
-    loop: true,
-    slidesPerView: "2",
-    spaceBetween: 20,
-    autoplay: {
-      delay: 1000,
-    },
-
-    breakpoints: {
-      1440: {
-        slidesPerView: 7.5,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 5,
-        spaceBetween: 20,
-      },
-      425: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-    },
-
-    pagination: {
-      el: ".event-list .swiper-pagination",
-      type: "fraction",
-    },
-  });
-}
-
-/* BUSINESS!!!---------------------------------------------- */
-if ($(".allergie-slider").length) {
-  const allergieSwiper = new Swiper(".allergie-slider", {
-    slidesPerView: 2,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-    },
-    pagination: {
-      el: ".allergie-slider-wrap .swiper-pagination",
-      type: "fraction",
-    },
-
-    breakpoints: {
-      1440: {
-        slidesPerView: 6,
-        spaceBetween: 20,
-      },
-      700: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
-  });
-}
 
 /* MAP!!!---------------------------------------------- */
 

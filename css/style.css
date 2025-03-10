@@ -1,9 +1,5 @@
 @charset 'utf-8';
 
-.breadcrumb {
-  display: none;
-}
-
 .slider-menu-wrap {
   padding-top: 12rem;
   display: flex;
@@ -13,7 +9,7 @@
 
 .menu-card {
   position: relative;
-  width: 80.5rem;
+  width: 90%;
   /* width: 22.2396vw; */
   aspect-ratio: 1/0.579;
   border-radius: 10px;
@@ -64,7 +60,7 @@
 
 .menu-con-slider {
   width: 50vw;
-  height: 52.4rem;
+  aspect-ratio: 1/0.62012;
 }
 
 .menu-con-slider-wrap .swiper-pagination {
@@ -84,6 +80,7 @@
 
 .menu-card figure img {
   scale: 0.8;
+  object-fit: contain;
 }
 
 .menu-card .menu-name {
@@ -94,7 +91,7 @@
   left: 0;
   width: 100%;
   height: 10.2rem;
-  background: var(--main-color80);
+  background: var(--main-color70);
   color: var(--white100);
   font-weight: 600;
   display: flex;
@@ -111,7 +108,7 @@
 }
 
 .reward {
-  margin: 6.25vw 0;
+  margin: 12rem 0;
 }
 
 .reward-item {
@@ -170,12 +167,21 @@
     flex-wrap: wrap;
   }
 
+  .menu-con-slider-wrap {
+    width: 100%;
+  }
+
   .menu-con-slider {
-    height: 51.1719vw;
+    width: 90%;
+    min-height: 25rem;
   }
 
   .menu-text-card {
     text-align: center;
+  }
+
+  .menu-card figure img {
+    scale: 1;
   }
 
   .menu-text-card p {
@@ -184,18 +190,10 @@
   }
 
   .menu-text-card .btn-more {
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto;
   }
 
   .menu-card {
-    width: 100%;
-  }
-
-  .menu-con-slider-wrap {
-    width: 100%;
-  }
-
-  .menu-con-slider {
     width: 100%;
   }
 }
