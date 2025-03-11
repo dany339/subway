@@ -40,7 +40,7 @@
 }
 
 .menu-text-card h3 {
-  font: 9rem/1.1 "Poppins", sans-serif;
+  font: 9rem/1.1 "Pretendard", sans-serif;
   font-size: clamp(5rem, 5vw, 9rem);
   font-weight: 700;
   color: var(--title-color);
